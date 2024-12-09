@@ -1,0 +1,411 @@
+/* Root Variables for Theme Colors */
+:root {
+    --primary-color: #7D1935; /* Burgundy for headings and accents */
+    --background-color: #F8F1E9; /* Ivory background */
+    --text-color: #2C2C2C; /* Dark charcoal text */
+    --white: #FFFFFF; /* White for text and elements */
+    --hover-color: #9B2344; /* Slightly lighter burgundy for hover */
+  }
+  
+  /* General Styles */
+  body {
+    font-family: 'Playfair Display', serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-family: 'Lato', sans-serif;
+    color: var(--text-color);
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  /* Hero Section */
+/* Hero Section */
+/* Hero Section Title */
+/* Hero Title: VERA CENGIZ */
+.hero h2 {
+    font-family: "Arial Hebrew", sans-serif; /* Use Arial Hebrew */
+    font-weight: 50; /* Thin font weight */
+    font-size: 3.5rem; /* Large title size */
+    color: white; /* White text */
+    text-transform: uppercase; /* Keep text in uppercase */
+    margin-bottom: 10px;
+    letter-spacing: 2px; /* Optional: Add spacing between letters for elegance */
+  }
+  
+  /* Hero Subtitle: Artificial Intelligence Expert */
+  .hero p {
+    font-family: "Arial Hebrew", sans-serif; /* Use Arial Hebrew */
+    font-weight: 200; /* Thin font weight */
+    font-size: 1.5rem; /* Slightly smaller subtitle */
+    color: white; /* White text */
+    letter-spacing: 1px; /* Optional: Add slight spacing */
+  }
+  
+  
+  
+  
+  /* Remove Background Color from Scroll Button Container */
+  .btn-scroll {
+    background-color: transparent !important; /* Ensure no background color */
+    border: none;
+  }
+  
+  
+  
+  
+  /* Section Titles */
+  .section-title h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .section-title span.description-title {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--hover-color);
+    margin-bottom: 10px;
+  }
+  
+  /* Buttons */
+  button, .btn-scroll, .btn-buy {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover, .btn-scroll:hover, .btn-buy:hover {
+    background-color: var(--hover-color);
+    transform: translateY(-3px);
+  }
+  
+  /* Section Styling */
+  .section {
+    padding: 60px 20px;
+    margin: 20px auto;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dark-background {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 60px 20px;
+  }
+  
+  /* Services Section */
+  .services .service-item {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid var(--hover-color);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .services .service-item:hover {
+    transform: translateY(-5px);
+    background-color: var(--hover-color);
+    color: var(--white);
+  }
+  
+  .services .service-item h4 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+  }
+  
+  .services .service-item p {
+    font-size: 1rem;
+    color: var(--text-color);
+  }
+  
+  /* Portfolio Section */
+  .portfolio .portfolio-content img {
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .portfolio .portfolio-content img:hover {
+    transform: scale(1.05);
+  }
+  
+  .portfolio .portfolio-info a {
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .portfolio .portfolio-info a:hover {
+    background-color: var(--hover-color);
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
+  
+  .footer a {
+    color: var(--white);
+    transition: color 0.3s ease;
+  }
+  
+  .footer a:hover {
+    color: var(--hover-color);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    h1, h2, h3 {
+      font-size: 1.8rem;
+    }
+  
+    .hero h2 {
+      font-size: 2.5rem;
+    }
+  
+    .section-title h2 {
+      font-size: 2rem;
+    }
+  
+    .portfolio .portfolio-content img {
+      width: 100%;
+    }
+  
+    .section {
+      padding: 30px 15px;
+    }
+  }
+  /* Testimonials Section */
+
+/* Customer Name Styling */
+.testimonial-item h3 {
+    color: #FFFFFF !important; /* White color for customer names */
+    font-size: 1.5rem; /* Adjust size as needed */
+  }
+  
+  /* Customer Role Styling */
+  .testimonial-item h4 {
+    color: #FFFFFF !important; /* White color for roles (e.g., CEO & Founder) */
+    font-size: 1rem;
+    font-style: italic; /* Optional: Makes it look more elegant */
+  }
+  
+  /* Customer Comments Styling */
+  .testimonial-item p {
+    color: #FFFFFF !important; /* White color for comments */
+    font-size: 1rem; /* Adjust size as needed */
+    line-height: 1.6; /* Add spacing for readability */
+  }
+  
+
+
+
+/*dark button*/
+
+:root {
+    /* Light Theme (Default) */
+    --background-color: #ffffff; /* Light background for body */
+    --section-background-color: #f8f8f8; /* Light gray for sections */
+    --text-color: #2c2c2c; /* Dark text */
+    --accent-color: #7d1935; /* Burgundy accent */
+  }
+  
+  body.dark-mode {
+    /* Dark Theme */
+    --background-color: #121212; /* Dark background for body */
+    --section-background-color: #1e1e1e; /* Darker gray for sections */
+    --text-color: #ffffff; /* White text */
+    --accent-color: #9b2344; /* Lighter burgundy for contrast */
+  }
+  
+  /* Global Styles */
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Apply dark background to all sections */
+  header, footer, .hero, #about, #resume, #services, #portfolio, #testimonials, #pricing, #pricing-2, #gallery, #contact {
+    background-color: var(--section-background-color); /* Dynamic dark background */
+    color: var(--text-color); /* Dynamic white text */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Hero Section */
+  .hero h2, .hero p {
+    color: var(--text-color); /* Text adapts dynamically */
+  }
+  
+  /* Resume Section */
+  #resume h2, #resume p {
+    color: var(--text-color); /* Text adapts dynamically */
+  }
+  
+  /* Portfolio Section */
+  #portfolio .portfolio-content {
+    background-color: var(--section-background-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Pricing Section */
+  #pricing .pricing-item, #pricing-2 .pricing-item {
+    background-color: var(--section-background-color);
+    border: 1px solid var(--accent-color); /* Accent border for pricing cards */
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+
+  /* Customer Comments Section (Light Theme) */
+#testimonials .testimonial-item {
+    color: #2c2c2c; /* Black text for light theme */
+  }
+  
+  /* Customer Comments Section (Dark Mode) */
+  body.dark-mode #testimonials .testimonial-item {
+    color: #ffffff; /* White text for dark mode */
+  }
+  
+  
+  /* Gallery Section */
+  #gallery .gallery-item img {
+    filter: brightness(0.7); /* Darken images slightly */
+    transition: filter 0.3s ease;
+  }
+  body.dark-mode #gallery .gallery-item img {
+    filter: brightness(0.5); /* Further darken images in dark mode */
+  }
+  
+  /* Contact Section */
+  #contact .info-item {
+    background-color: var(--section-background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Links */
+  a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: var(--text-color);
+  }
+  
+  /* Buttons */
+/* Scroll-to-Top Button */
+#scroll-top {
+  position: fixed;
+  bottom: 20px;
+  left: 20px; /* Move to the left side of the screen */
+  z-index: 1000;
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#scroll-top:hover {
+  background-color: var(--text-color);
+  color: var(--accent-color);
+}
+
+  
+  /* Light/Dark Mode Toggle Button */
+  .theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .theme-toggle:hover {
+    background-color: var(--text-color);
+    color: var(--accent-color);
+  }
+  
+/*logo*/
+/* Center the logo above the text */
+/* Style for the logo container */
+.logo-container {
+  margin: 0 auto 20px auto; /* Center and add space between logo and text */
+  text-align: center;
+}
+
+.logo-container img {
+  max-width: 200px; /* Adjust logo size */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Ensure the logo is centered */
+}
+
+#hero-title {
+  font-family: 'Arial Hebrew', sans-serif; /* Replace with your preferred font */
+  font-size: 3rem; /* Adjust as needed */
+  font-weight: light;
+  color: white !important; /* Ensures text stays white */
+  margin-top: 10px;
+}
+
+#hero-subtitle {
+  font-family: 'Arial Hebrew', sans-serif; /* Same font for consistency */
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: white !important;
+  margin-bottom: 20px;
+}
+
+
+
+#hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height for centering */
+  text-align: center;
+}
+
+
